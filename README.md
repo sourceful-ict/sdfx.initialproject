@@ -1,46 +1,46 @@
 # SFDX App
-```sfdx force:auth:web:login -a NORMAL_ENV```
+```sfdx force:auth:web:login -a NORMAL_ENV``` <br />
 or use any other environment
-
-```sfdx force:auth:web:login -a NORMAL_ENV_ALIAS```
-```sfdx force:auth:web:login -a NORMAL_ENV_ALIAS -r https://login.salesforce.com```
-```sfdx force:auth:web:login -a SCHRACHORG_ALIAS -r https://test.salesforce.com```
-
-```sfdx force:org:list```
-
-```sfdx force:org:open -u NORMAL_ENV_ALIAS```
-```sfdx force:org:open -u SCHRACHORG_ALIAS```
+<br />
+```sfdx force:auth:web:login -a NORMAL_ENV_ALIAS```<br />
+```sfdx force:auth:web:login -a NORMAL_ENV_ALIAS -r https://login.salesforce.com```<br />
+```sfdx force:auth:web:login -a SCHRACHORG_ALIAS -r https://test.salesforce.com```<br />
+<br />
+```sfdx force:org:list```<br />
+<br />
+```sfdx force:org:open -u NORMAL_ENV_ALIAS```<br />
+```sfdx force:org:open -u SCHRACHORG_ALIAS```<br />
 
 ## Create scratch
-```sfdx force:org:create -f config/project-scratch-def.json -d 30 -v NORMAL_ENV_ALIAS -a SCHRACHORG_ALIAS```
-```sfdx force:org:delete -u SCHRACHORG_ALIAS```
+```sfdx force:org:create -f config/project-scratch-def.json -d 30 -v NORMAL_ENV_ALIAS -a SCHRACHORG_ALIAS```<br />
+```sfdx force:org:delete -u SCHRACHORG_ALIAS```<br />
 
-```sfdx force:config:set defaultusername=SCHRACHORG_ALIAS```
-```sfdx force:config:set defaultdevhubusername=NORMAL_ENV_ALIAS```
-```sfdx force:config:list```
+```sfdx force:config:set defaultusername=SCHRACHORG_ALIAS```<br />
+```sfdx force:config:set defaultdevhubusername=NORMAL_ENV_ALIAS```<br />
+```sfdx force:config:list```<br />
 <br />
 SFDX: Refresh SObject Definitions
 
 # Generate password for scratch
-```sfdx force:user:password:generate -u SCHRACHORG_ALIAS ```
+```sfdx force:user:password:generate -u SCHRACHORG_ALIAS ```<br />
 or use any other scratch
 
 ## Share scratch
-```sfdx force:user:display -u SCHRACHORG_ALIAS``` 
+```sfdx force:user:display -u SCHRACHORG_ALIAS``` <br />
 or use any other scratch
 
-```sfdx force:user:display -u SCHRACHORG_ALIAS```
-```sfdx force:user:password:generate -u SCHRACHORG_ALIAS```
+```sfdx force:user:display -u SCHRACHORG_ALIAS```<br />
+```sfdx force:user:password:generate -u SCHRACHORG_ALIAS```<br />
 
 ## Dev, Build and Test
-```sfdx force:source:status```
-```sfdx force:source:push```
-```sfdx force:source:pull```
+```sfdx force:source:status```<br />
+```sfdx force:source:push```<br />
+```sfdx force:source:pull```<br />
 
 ## Resources
-```sfdx plugins:install etcopydata```
-```sfdx ETCopyData:export```
-```sfdx ETCopyData:import```
+```sfdx plugins:install etcopydata```<br />
+```sfdx ETCopyData:export```<br />
+```sfdx ETCopyData:import```<br />
 
 ## Deploy to Sandbox
 ```./scripts/convertForDeploy.sh``` <br />
