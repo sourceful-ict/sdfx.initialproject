@@ -1,4 +1,4 @@
-# SFDX App
+# SFDX Inital Project
 ```sfdx force:auth:web:login -a NORMAL_ENV``` <br />
 or use any other environment<br />
 <br />
@@ -21,7 +21,7 @@ or use any other environment<br />
 <br />
 SFDX: Refresh SObject Definitions
 
-# Generate password for scratch
+## Generate password for scratch
 ```sfdx force:user:password:generate -u SCHRACHORG_ALIAS ```<br />
 or use any other scratch
 
