@@ -1,6 +1,6 @@
 # SFDX App
 ```sfdx force:auth:web:login -a NORMAL_ENV``` <br />
-or use any other environment
+or use any other environment<br />
 <br />
 ```sfdx force:auth:web:login -a NORMAL_ENV_ALIAS```<br />
 ```sfdx force:auth:web:login -a NORMAL_ENV_ALIAS -r https://login.salesforce.com```<br />
