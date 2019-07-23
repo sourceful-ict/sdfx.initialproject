@@ -1,0 +1,37 @@
+{
+    "now": "2019-07-04T20:51:05.491Z",
+    "orgSource": "NORMAL_ENV_ALIAS",
+    "orgDestination": "SCHRACHORG_ALIAS",
+    "sObjectsData": [
+        {
+            "name": "Account",
+            "ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
+            "maxRecords": 20,
+            "orderBy": "Name",
+            "where": null
+        },
+        {
+            "name": "Contact",
+            "ignoreFields": "OwnerId,CreatedBy,CreatedDate,CurrencyIsoCode",
+            "maxRecords": 20,
+            "orderBy": "Name",
+            "where": null
+        }
+    ],
+    "sObjectsMetadata": [
+        {
+            "name": "User",
+            "fieldsToExport": "FirstName,LastName,Email,Id",
+            "matchBy": "Email",
+            "orderBy": null,
+            "where": null
+        }
+    ],
+    "rootFolder": "./ETCopyData",
+    "includeAllCustom": false,
+    "stopOnErrors": true,
+    "ignoreFields": "OwnerId, CreatedBy, CreatedDate, CurrencyIsoCode",
+    "maxRecordsEach": null,
+    "deleteDestination": true,
+    "pollingTimeout": 100000
+}
